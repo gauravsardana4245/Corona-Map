@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona Cases Tracker</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #map{
+            width: 100vw;
+            height: 100vh;
+        }
+        #heading{
+            background-color: black;
+            color: white;
+            /* height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+        .h-primary{
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body> <div id="heading">
+    <h1 class="h-primary">Corona Cases Tracker - World Map</h1>
+</div>
+    <div id='map'></div>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiZ2F1cmF2c2FyZGFuYSIsImEiOiJjbDh6cWFzcjQwcmVnM3dwY2dvb2hmc2NrIn0.6V9lGyzaDUki3YPCUXYaJw';
+const map = new mapboxgl.Map({
+container: 'map', // container ID
+style: 'mapbox://styles/mapbox/dark-v10', // style URL
+// center: [-74.5, 40], // starting position [lng, lat]
+zoom: 1, // starting zoom
+// projection: 'globe' // display the map as a 3D globe
+});
+// map.on('style.load', () => {
+// map.setFog({}); // Set the default atmosphere style
+// });
+
+</script>
+
+
+
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
